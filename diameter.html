@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math Hub - Diameter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo-section"><img src="img/mathhh.jpg" alt="Logo"><h1>Math Hub</h1></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="calculator.html">Calculator</a></li>
+                    <li><a href="diameter.html" class="active">Diameter</a></li>
+                    <li><a href="area.html">Area</a></li>
+                    <li><a href="volume.html">Volume</a></li>
+                    <li><a href="perimeter.html">Perimeter</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="banner"><h2>Diameter & Radius Helper</h2><p>Calculate internal metrics for uniform circles.</p></section>
+        <div class="calc-grid" style="max-width:500px; margin: 0 auto;">
+            <div class="calc-card">
+                <h3>Circle Diagnostics</h3>
+                <div class="formula-text">d = 2r | C = 2&pi;r</div>
+                <div class="form-group">
+                    <label>Enter Radius (r):</label>
+                    <input type="number" id="dia-radius" placeholder="e.g. 5">
+                </div>
+                <button onclick="calcDiameter()">Solve Parameters</button>
+                <div class="output-box" id="dia-out">Result will appear here...</div>
+            </div>
+        </div>
+    </main>
+    <script src="javascript.js"></script>
+    <footer><p>&copy; 2026 Math Hub.</p></footer>
+</body>
+</html>

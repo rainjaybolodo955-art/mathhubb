@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math Hub - Perimeter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo-section"><img src="img/mathhh.jpg" alt="Logo"><h1>Math Hub</h1></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li><li><a href="calculator.html">Calculator</a></li><li><a href="diameter.html">Diameter</a></li>
+                    <li><a href="area.html">Area</a></li><li><a href="volume.html">Volume</a></li><li><a href="perimeter.html" class="active">Perimeter</a></li><li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="banner"><h2>Perimeter Configurations</h2><p>Find total boundary values for uniform shapes.</p></section>
+        <div class="calc-grid">
+            <div class="calc-card">
+                <h3>Rectangle</h3><div class="formula-text">P = 2(l + w)</div>
+                <div class="form-group"><label>Length Value:</label><input type="number" id="prect-l"></div>
+                <div class="form-group"><label>Width Value:</label><input type="number" id="prect-w"></div>
+                <button onclick="calcPeriRectangle()">Solve</button><div class="output-box" id="prect-out"></div>
+            </div>
+            <div class="calc-card">
+                <h3>Square</h3><div class="formula-text">P = 4s</div>
+                <div class="form-group"><label>Side Value:</label><input type="number" id="psq-s"></div>
+                <button onclick="calcPeriSquare()">Solve</button><div class="output-box" id="psq-out"></div>
+            </div>
+            <div class="calc-card">
+                <h3>Triangle</h3><div class="formula-text">P = a + b + c</div>
+                <div class="form-group"><label>Side A:</label><input type="number" id="ptri-a"></div>
+                <div class="form-group"><label>Side B:</label><input type="number" id="ptri-b"></div>
+                <div class="form-group"><label>Side C:</label><input type="number" id="ptri-c"></div>
+                <button onclick="calcPeriTriangle()">Solve</button><div class="output-box" id="ptri-out"></div>
+            </div>
+            <div class="calc-card">
+                <h3>Circle (Circumference)</h3><div class="formula-text">C = 2&pi;r</div>
+                <div class="form-group"><label>Radius:</label><input type="number" id="pcirc-r"></div>
+                <button onclick="calcPeriCircle()">Solve</button><div class="output-box" id="pcirc-out"></div>
+            </div>
+            <div class="calc-card">
+                <h3>Parallelogram</h3><div class="formula-text">P = 2(a + b)</div>
+                <div class="form-group"><label>Side Length A:</label><input type="number" id="ppara-a"></div>
+                <div class="form-group"><label>Base Length B:</label><input type="number" id="ppara-b"></div>
+                <button onclick="calcPeriParallelogram()">Solve</button><div class="output-box" id="ppara-out"></div>
+            </div>
+        </div>
+    </main>
+    <script src="javascript.js"></script>
+    <footer><p>&copy; 2026 Math Hub.</p></footer>
+</body>
+</html>

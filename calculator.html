@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Hub - Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo-section"><img src="img/mathhh.jpg" alt="Logo"><h1>Math Hub</h1></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="calculator.html" class="active">Calculator</a></li>
+                    <li><a href="diameter.html">Diameter</a></li>
+                    <li><a href="area.html">Area</a></li>
+                    <li><a href="volume.html">Volume</a></li>
+                    <li><a href="perimeter.html">Perimeter</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="banner"><h2>Scientific Calculator</h2><p>Perform basic operations and advanced functions.</p></section>
+        <div class="scicalc-container">
+            <input type="text" id="sci-display" readonly>
+            <div class="sci-buttons">
+                <button class="action" onclick="clearDisplay()">C</button>
+                <button class="action" onclick="deleteLast()">DEL</button>
+                <button class="operator" onclick="appendValue('(')">(</button>
+                <button class="operator" onclick="appendValue(')')">)</button>
+                <button class="operator" onclick="appendValue('sqrt(')">&radic;</button>
+                <button class="operator" onclick="appendValue('^')">^</button>
+                <button class="operator" onclick="appendValue('%')">%</button>
+                <button class="operator" onclick="appendValue('/')">/</button>
+                <button onclick="appendValue('7')">7</button><button onclick="appendValue('8')">8</button><button onclick="appendValue('9')">9</button>
+                <button class="operator" onclick="appendValue('*')">&times;</button>
+                <button onclick="appendValue('4')">4</button><button onclick="appendValue('5')">5</button><button onclick="appendValue('6')">6</button>
+                <button class="operator" onclick="appendValue('-')">-</button>
+                <button onclick="appendValue('1')">1</button><button onclick="appendValue('2')">2</button><button onclick="appendValue('3')">3</button>
+                <button class="operator" onclick="appendValue('+')">+</button>
+                <button onclick="appendValue('0')">0</button><button onclick="appendValue('.')">.</button>
+                <button class="equal" style="grid-column: span 2;" onclick="calculateResult()">=</button>
+            </div>
+        </div>
+    </main>
+    <script src="javascript.js"></script>
+    <footer><p>&copy; 2026 Math Hub.</p></footer>
+</body>
+</html>

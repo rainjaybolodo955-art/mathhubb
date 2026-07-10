@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math Hub - Area</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo-section"><img src="img/mathhh.jpg" alt="Logo"><h1>Math Hub</h1></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li><li><a href="calculator.html">Calculator</a></li><li><a href="diameter.html">Diameter</a></li>
+                    <li><a href="area.html" class="active">Area</a></li><li><a href="volume.html">Volume</a></li><li><a href="perimeter.html">Perimeter</a></li><li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="banner"><h2>Area Calculations</h2><p>Find the surface space of standard 2D dimensional shapes.</p></section>
+        <div class="calc-grid">
+            <div class="calc-card">
+                <h3>Rectangle</h3><div class="formula-text">A = l &times; w</div>
+                <div class="form-group"><label>Length:</label><input type="number" id="rect-l"></div>
+                <div class="form-group"><label>Width:</label><input type="number" id="rect-w"></div>
+                <button onclick="calcAreaRectangle()">Solve</button><div class="output-box" id="rect-out"></div>
+            </div>
+            <div class="calc-card">
+                <h3>Square</h3><div class="formula-text">A = s²</div>
+                <div class="form-group"><label>Side Value:</label><input type="number" id="sq-s"></div>
+                <button onclick="calcAreaSquare()">Solve</button><div class="output-box" id="sq-out"></div>
+            </div>
+            <div class="calc-card">
+                <h3>Triangle</h3><div class="formula-text">A = 0.5 &times; b &times; h</div>
+                <div class="form-group"><label>Base Width:</label><input type="number" id="tri-b"></div>
+                <div class="form-group"><label>Vertical Height:</label><input type="number" id="tri-h"></div>
+                <button onclick="calcAreaTriangle()">Solve</button><div class="output-box" id="tri-out"></div>
+            </div>
+            <div class="calc-card">
+                <h3>Circle</h3><div class="formula-text">A = &pi;r²</div>
+                <div class="form-group"><label>Radius Value:</label><input type="number" id="circ-r"></div>
+                <button onclick="calcAreaCircle()">Solve</button><div class="output-box" id="circ-out"></div>
+            </div>
+            <div class="calc-card">
+                <h3>Parallelogram</h3><div class="formula-text">A = b &times; h</div>
+                <div class="form-group"><label>Base Side:</label><input type="number" id="para-b"></div>
+                <div class="form-group"><label>Height Side:</label><input type="number" id="para-h"></div>
+                <button onclick="calcAreaParallelogram()">Solve</button><div class="output-box" id="para-out"></div>
+            </div>
+            <div class="calc-card">
+                <h3>Trapezoid</h3><div class="formula-text">A = ((a + b) / 2) &times; h</div>
+                <div class="form-group"><label>Base Side A:</label><input type="number" id="trap-a"></div>
+                <div class="form-group"><label>Base Side B:</label><input type="number" id="trap-b"></div>
+                <div class="form-group"><label>Height Vector:</label><input type="number" id="trap-h"></div>
+                <button onclick="calcAreaTrapezoid()">Solve</button><div class="output-box" id="trap-out"></div>
+            </div>
+        </div>
+    </main>
+    <script src="javascript.js"></script>
+    <footer><p>&copy; 2026 Math Hub.</p></footer>
+</body>
+</html>

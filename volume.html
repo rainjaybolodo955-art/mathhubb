@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math Hub - Volume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo-section"><img src="img/mathhh.jpg" alt="Logo"><h1>Math Hub</h1></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li><li><a href="calculator.html">Calculator</a></li><li><a href="diameter.html">Diameter</a></li>
+                    <li><a href="area.html">Area</a></li><li><a href="volume.html" class="active">Volume</a></li><li><a href="perimeter.html">Perimeter</a></li><li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="banner"><h2>Volume Metrics</h2><p>Compute holding metrics for geometric structures.</p></section>
+        <div class="calc-grid">
+            <div class="calc-card">
+                <h3>Cube</h3><div class="formula-text">V = s³</div>
+                <div class="form-group"><label>Edge length:</label><input type="number" id="vcube-s"></div>
+                <button onclick="calcVolCube()">Solve</button><div class="output-box" id="vcube-out"></div>
+            </div>
+            <div class="calc-card">
+                <h3>Cylinder</h3><div class="formula-text">V = &pi;r²h</div>
+                <div class="form-group"><label>Base Radius:</label><input type="number" id="vcyl-r"></div>
+                <div class="form-group"><label>Prism Height:</label><input type="number" id="vcyl-h"></div>
+                <button onclick="calcVolCylinder()">Solve</button><div class="output-box" id="vcyl-out"></div>
+            </div>
+            <div class="calc-card">
+                <h3>Cone</h3><div class="formula-text">V = (1/3)&pi;r²h</div>
+                <div class="form-group"><label>Base Radius:</label><input type="number" id="vcone-r"></div>
+                <div class="form-group"><label>Height Vector:</label><input type="number" id="vcone-h"></div>
+                <button onclick="calcVolCone()">Solve</button><div class="output-box" id="vcone-out"></div>
+            </div>
+            <div class="calc-card">
+                <h3>Sphere</h3><div class="formula-text">V = (4/3)&pi;r³</div>
+                <div class="form-group"><label>Radius Parameter:</label><input type="number" id="vsph-r"></div>
+                <button onclick="calcVolSphere()">Solve</button><div class="output-box" id="vsph-out"></div>
+            </div>
+            <div class="calc-card">
+                <h3>Rectangular Prism</h3><div class="formula-text">V = l &times; w &times; h</div>
+                <div class="form-group"><label>Length Matrix:</label><input type="number" id="vprism-l"></div>
+                <div class="form-group"><label>Width Matrix:</label><input type="number" id="vprism-w"></div>
+                <div class="form-group"><label>Height Matrix:</label><input type="number" id="vprism-h"></div>
+                <button onclick="calcVolPrism()">Solve</button><div class="output-box" id="vprism-out"></div>
+            </div>
+        </div>
+    </main>
+    <script src="javascript.js"></script>
+    <footer><p>&copy; 2026 Math Hub.</p></footer>
+</body>
+</html>
